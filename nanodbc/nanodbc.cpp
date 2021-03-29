@@ -4000,7 +4000,7 @@ private:
             case SQL_CHAR:
             case SQL_VARCHAR:
                 col.ctype_ = sql_ctype<std::string>::value;
-                col.clen_ = NBYTES(col.sqlsize_, SQLCHAR);
+                col.clen_ = NBYTES(col.sqlsize_, SQLWCHAR);
                 if (col.sqlsize_ == 0)
                 {
                     col.clen_ = 0;
