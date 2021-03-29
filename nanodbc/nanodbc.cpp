@@ -2901,7 +2901,7 @@ private:
             case SQL_CHAR:
             case SQL_VARCHAR:
                 col.ctype_ = sql_ctype<std::string>::value;
-                col.clen_ = (col.sqlsize_ + 1) * sizeof(SQLCHAR);
+                col.clen_ = (col.sqlsize_ + 1) * sizeof(SQLWCHAR);
                 if (is_blob)
                 {
                     col.clen_ = 0;
